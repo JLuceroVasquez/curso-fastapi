@@ -1,5 +1,5 @@
 Prompts
 
-El texto seleccionado corresponde a la transcripción de un video del curso FastApi. Genera un resumen en español hasta en 50 palabras, nombrando las principales funciones, métodos, atributos o excepciones enseñados en clase.
+El texto seleccionado corresponde a la transcripción de un video del curso FastApi. Genera un resumen en español hasta en 50 palabras, nombrando las principales funciones, métodos, atributos, excepciones o comandos de terminal enseñados en clase.
 
 Hacer cambios y subirlos (push) al repositorio GitHub remoto: HTTPS + Token personal de acceso (PAT)
