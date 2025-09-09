@@ -1,17 +1,11 @@
 #Ejecutar "uvicorn --port 8000 --reload --log-level info main:app" en Powershell para correr Uvicorn, el servidor web que se comunicará con la API para pasar y responder solicitudes de clientes http o https.
 #"from typing import Union" Se remplazó por el uso del operador "|" admitido en versiones superiores a Python 10.
 from fastapi import FastAPI
-from pydantic import BaseModel #Se importa la clase BaseModel para realizar una solicitud de tipo PUT
+from models.item_model import Item #Se vincula la clase Item de modulo "models"
+
 
 #Creación de una aplicación mediante una instancia de FastAPI()
 app = FastAPI()
-
-#Creación de la clase Item a partir de BaseModel que servirá como esquema para actualizar items mediante solicitudes PUT
-class Item(BaseModel):
-    name: str
-    price: float
-    is_offer: bool|None=None
-
 
 #Método GET para retornar la respuesta de la función ... al cliente HTPSS, sin modificar los datos del recurso.
 
